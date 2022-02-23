@@ -297,21 +297,61 @@ product */
 
 .collection-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.collection1st {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .collection {
     position: relative;
-    width: 100%;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
 }
 
 .collection img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+
+.third {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+}
+
+.third img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.9s;
+}
+
+.third img:hover {
+    opacity: 0.5;
+    transform: scale(0.96);
+}
+
+.third p {
+    position: relative;
+    top: -60%;
+    left: 50%;
+    right: -50%;
+    color: rgb(2, 2, 2);
+    text-shadow: 5px 0px 1px #fff;
+    font-size: 2.6rem;
 }
 
 .collection p {
@@ -322,20 +362,14 @@ product */
     text-align: center;
     color: rgb(2, 2, 2);
     text-shadow: 5px 0px 1px #fff;
-    font-size: 50px;
+    font-size: 2.6rem;
     font-weight: 500;
     text-transform: capitalize;
 }
 
-.collection:nth-child(4) {
-    grid-column: span 3;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
 .collection img:hover {
     opacity: 0.5;
-    border: 1px solid grey;
+    transform: scale(0.96);
 }
 
 
